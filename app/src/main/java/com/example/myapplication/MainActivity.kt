@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -10,6 +11,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import com.example.myapplication.databinding.ActivityMainBinding
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,6 +34,23 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
+
+        val TAG = "MainActivity"
+        Log.v(TAG, "This is a verbose log")
+        Log.d(TAG, "This is debug log")
+        Log.i(TAG, "This is a info log")
+        Log.w(TAG, "This is warn log")
+
+
+        val btn_click_me = findViewById(R.id.button5) as Button
+        // set on-click listener
+        btn_click_me.setOnClickListener {
+            Log.e(TAG, "This is an error log")
+            
+        }
+
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
