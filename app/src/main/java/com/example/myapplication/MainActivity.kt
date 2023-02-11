@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import com.google.android.material.snackbar.Snackbar
@@ -46,7 +47,8 @@ class MainActivity : AppCompatActivity() {
         // set on-click listener
         btn_click_me.setOnClickListener {
             Log.e(TAG, "This is an error log")
-            
+            val intent = Intent(this, SecondActivity::class.java);
+            startActivity(intent);
         }
 
 
