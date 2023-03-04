@@ -17,4 +17,14 @@
     <string name="subject">Subject</string>
     <string name="reminder">Reminder</string>
     <string name="done">Done</string>
+
+    <string-array name="programming_lang">
+        <item>R2-D2</item>
+        <item>BB-8</item>
+        <item>C-3PO</item>
+        <item>Dalek</item>
+        <item>Robble</item>
+        <item>Gart</item>
+        <item>Optimus Prime</item>
+    </string-array>
 </resources>
