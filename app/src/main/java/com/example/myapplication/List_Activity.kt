@@ -10,7 +10,7 @@ import android.widget.ListView
 import android.widget.Toast
 
 class List_Activity : AppCompatActivity() {
-        var array = arrayOf("Android", "Java", "Php", "Hadoop", "Sap", "Python", "Ajax", "C++", "Ruby", "Rails", ".Net", "Perl")
+        var array = arrayOf("Anna", "Kristie", "Christiana", "Danty", "Danielle", "Rhenelyn", "Aly", "Hannah", "Jane", "Salve")
 
         @SuppressLint("MissingInflatedId")
         override fun onCreate(savedInstanceState: Bundle?) {
